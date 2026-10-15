@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trattoria con forno a legna — La Corte dei Sabiìti, Turate</title>
+<meta name="description" content="La Corte dei Sabiìti, trattoria a Turate (Via Marconi 5). Pranzo di lavoro a 15 euro, cucina tradizionale lombarda la sera, ogni settimana un piatto a tema, forno a legna per pane, arrosti e patate.">
+<link rel="icon" type="image/png" href="logo_corten.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=65">
+</head>
+<body>
+<nav class="topbar" id="topbar">
+  <a href="index.html" class="brand"><span class="corte">La Corte dei </span><strong>Sabiìti</strong></a>
+  <button class="burger" aria-label="Apri il menu" aria-expanded="false" onclick="var n=document.getElementById('topbar');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><span></span></button>
+  <div class="menu">
+    <a href="trattoria.html">La trattoria</a>
+    <a href="menu.html">Menù</a>
+    <a href="eventi.html">Eventi privati</a>
+    <a href="contatti.html">Dove siamo</a>
+    <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta-nav">Prenota</a>
+  </div>
+</nav>
+<header class="home-hero" style="--bg-img: url('img/hero-home-2.jpg')">
+  <div class="wrap">
+    <img src="logo_avorio.png" alt="La Corte dei Sabiìti" class="logo">
+    <div class="claim">La cucina di</div>
+    <h1>TURATE</h1>
+    <div class="divider"></div>
+    <div class="sotto">con forno a legna</div>
+    <div class="cta-row">
+      <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta primary">Prenota un tavolo</a>
+      <a href="menu.html" class="cta secondary" style="color: var(--panna); border-color: var(--panna);">Il menù</a>
+    </div>
+  </div>
+</header>
+
+<div class="orari-strip">
+  <div><div class="k">Pranzo</div><div class="v">Lunedì – Sabato<br>12.00 – 14.30</div></div>
+  <div><div class="k">Cena</div><div class="v">Giovedì – Sabato<br>19.00 – 24.00</div></div>
+  <div><div class="k">Domenica</div><div class="v">Chiuso<span>disponibile per eventi privati</span></div></div>
+</div>
+
+<section class="block">
+  <div class="container-narrow" style="text-align: center;">
+    <div class="eyelet">La trattoria</div>
+    <h2 class="titolone">Una trattoria nel centro di Turate</h2>
+    <div class="hrline center"></div>
+    <p class="lead">Nel locale del Sabiìti, in Via Marconi 5, riparte una trattoria con una squadra tutta rinnovata.</p>
+    <p class="lead">Cucina della tradizione lombarda, con il pane e gli arrosti del forno a legna.</p>
+    <p style="margin-top: 36px;"><a href="trattoria.html" class="cta secondary">La nostra storia</a></p>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="img" style="--bg-img: url('img/cassoeula.jpg')"></div>
+  <div class="txt">
+    <div class="eyelet">Settimane a tema</div>
+    <h3>Dal 29 ottobre, la cassoeula</h3>
+    <div class="quando">Poi dal 5 novembre lo stracotto d'asino</div>
+    <p>Ogni settimana, da giovedì a sabato, un piatto della tradizione al centro del menù.</p>
+    <a href="menu.html#settimane" class="cta primary">Le settimane a tema</a>
+  </div>
+</section>
+
+<section class="block recensioni" id="recensioni">
+  <div class="container" style="text-align: center;">
+    <div class="eyelet">Recensioni</div>
+    <h2 class="titolone">Dicono di noi</h2>
+    <div class="hrline center"></div>
+    <div class="rec-grid">
+      <!-- Per inserire una recensione vera, sostituire un riquadro .rec-slot con:
+      <figure class="rec-card"><blockquote>Testo della recensione.</blockquote><figcaption>Nome · Google · mese anno</figcaption></figure> -->
+      <div class="rec-slot"><span>Prima recensione</span><small>in arrivo</small></div>
+      <div class="rec-slot"><span>Seconda recensione</span><small>in arrivo</small></div>
+      <div class="rec-slot"><span>Terza recensione</span><small>in arrivo</small></div>
+    </div>
+    <div class="cta-row" style="margin-top: 32px;">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=La+Corte+dei+Sabiiti+Turate" class="cta scuro" target="_blank" rel="noopener">Recensisci su Google</a>
+      <a href="https://www.tripadvisor.it" class="cta secondary" target="_blank" rel="noopener">Recensisci su TripAdvisor</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-block">
+  <h2>Prenotazioni</h2>
+  <p>Per la sera e per le settimane a tema consigliamo di prenotare. The Fork, telefono o WhatsApp.</p>
+  <div class="cta-row">
+    <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta primary">Prenota su The Fork</a>
+    <a href="tel:+393758791522" class="cta secondary">375 879 1522</a>
+    <a href="https://wa.me/393758791522" target="_blank" rel="noopener" class="cta secondary">WhatsApp</a>
+  </div>
+</section>
+<footer class="sitofoot">
+  <div class="foot-nav">
+    <a href="trattoria.html">La trattoria</a><a href="menu.html">Menù</a><a href="eventi.html">Eventi privati</a><a href="contatti.html">Dove siamo</a>
+  </div>
+  La Corte dei Sabiìti <span class="trattino"></span> Via Marconi 5 · 22078 Turate (CO) <span class="trattino"></span>
+  <a href="tel:+393758791522">375 879 1522</a> <span class="trattino"></span>
+  <a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener">Instagram</a> <span class="trattino"></span>
+  <a href="https://www.facebook.com/profile.php?id=61594325304777" target="_blank" rel="noopener">Facebook</a>
+</footer>
+</body>
+</html>

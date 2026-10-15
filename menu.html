@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menù — pranzo, sera, vini e settimane a tema | La Corte dei Sabiìti, Turate</title>
+<meta name="description" content="Il menù della Corte dei Sabiìti: pranzo di lavoro a 15 euro dal lunedì al sabato, la sera cucina tradizionale lombarda, vini, e ogni settimana un piatto a tema.">
+<link rel="icon" type="image/png" href="logo_corten.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=65">
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+<nav class="topbar" id="topbar">
+  <a href="index.html" class="brand"><span class="corte">La Corte dei </span><strong>Sabiìti</strong></a>
+  <button class="burger" aria-label="Apri il menu" aria-expanded="false" onclick="var n=document.getElementById('topbar');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><span></span></button>
+  <div class="menu">
+    <a href="trattoria.html">La trattoria</a>
+    <a href="menu.html">Menù</a>
+    <a href="eventi.html">Eventi privati</a>
+    <a href="contatti.html">Dove siamo</a>
+    <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta-nav">Prenota</a>
+  </div>
+</nav>
+<header class="hero-page" style="--bg-img: url('img/pranzo.jpg')">
+  <div class="wrap">
+    <div class="label">Il menù</div>
+    <h1>Il menù</h1>
+    <div class="divider"></div>
+    <div class="sub">Pranzo dal lunedì al sabato. La sera da giovedì a sabato.</div>
+  </div>
+</header>
+
+<div class="tabs" role="tablist">
+  <a href="#pranzo" class="active">Pranzo</a>
+  <a href="#sera">La sera</a>
+  <a href="#vini">Vini</a>
+  <a href="#settimane">Settimane a tema</a>
+</div>
+<p class="bozza-nota">Piatti, vini e prezzi di esempio: il menù è in aggiornamento.</p>
+
+<section class="tab-panel attiva block" id="pranzo">
+  <div class="container">
+    <div style="text-align: center;">
+      <div class="eyelet">12.00 – 14.30 · lunedì – sabato</div>
+      <div class="prezzo-box"><span class="cifra">15</span><span class="euro">€</span></div>
+      <ul class="incluso"><li>Primo</li><li>Secondo con contorno</li><li>Acqua</li><li>Caffè</li></ul>
+      <p class="corpo" style="max-width: 560px; margin: 24px auto 0;">Il menù cambia ogni settimana. Servizio rapido, pane e grissini del forno a legna.</p>
+    </div>
+    <div class="menu-cols">
+<div class="menu-cat"><h3>Primi</h3>
+<div class="voce"><div class="riga"><span class="nome">Risotto alla milanese</span></div><p class="desc">Con midollo, a richiesta</p></div>
+<div class="voce"><div class="riga"><span class="nome">Pizzoccheri della Valtellina</span></div><p class="desc">Bitto, verza, patate</p></div>
+<div class="voce"><div class="riga"><span class="nome">Tagliatelle al ragù di manzo</span></div></div>
+</div>
+<div class="menu-cat"><h3>Secondi</h3>
+<div class="voce"><div class="riga"><span class="nome">Arrosto di maiale</span></div><p class="desc">Dal forno a legna, con patate</p></div>
+<div class="voce"><div class="riga"><span class="nome">Cotoletta alla milanese</span></div><p class="desc">Con insalata di stagione</p></div>
+<div class="voce"><div class="riga"><span class="nome">Brasato di manzo</span></div><p class="desc">Con polenta</p></div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="tab-panel block" id="sera">
+  <div class="container">
+    <div style="text-align: center;">
+      <div class="eyelet">19.00 – 24.00 · giovedì – sabato</div>
+      <h2 class="titolone">Cucina tradizionale lombarda</h2>
+    </div>
+    <div class="menu-cols">
+<div class="menu-cat"><h3>Antipasti</h3>
+<div class="voce"><div class="riga"><span class="nome">Salumi lombardi</span><span class="punti"></span><span class="prezzo">12</span></div><p class="desc">Con giardiniera della casa</p></div>
+<div class="voce"><div class="riga"><span class="nome">Nervetti in insalata</span><span class="punti"></span><span class="prezzo">9</span></div><p class="desc">Cipolla, prezzemolo, olio</p></div>
+<div class="voce"><div class="riga"><span class="nome">Mondeghili</span><span class="punti"></span><span class="prezzo">9</span></div><p class="desc">Polpettine di bollito, salsa verde</p></div>
+</div>
+<div class="menu-cat"><h3>Primi</h3>
+<div class="voce"><div class="riga"><span class="nome">Risotto alla milanese</span><span class="punti"></span><span class="prezzo">13</span></div><p class="desc">Con midollo, a richiesta</p></div>
+<div class="voce"><div class="riga"><span class="nome">Pizzoccheri della Valtellina</span><span class="punti"></span><span class="prezzo">12</span></div><p class="desc">Bitto, verza, patate</p></div>
+<div class="voce"><div class="riga"><span class="nome">Casoncelli alla bergamasca</span><span class="punti"></span><span class="prezzo">12</span></div><p class="desc">Burro, salvia, pancetta</p></div>
+</div>
+<div class="menu-cat"><h3>Secondi</h3>
+<div class="voce"><div class="riga"><span class="nome">Cotoletta alla milanese</span><span class="punti"></span><span class="prezzo">19</span></div><p class="desc">Con insalata di stagione</p></div>
+<div class="voce"><div class="riga"><span class="nome">Ossobuco</span><span class="punti"></span><span class="prezzo">20</span></div><p class="desc">Con risotto allo zafferano</p></div>
+<div class="voce"><div class="riga"><span class="nome">Brasato di manzo</span><span class="punti"></span><span class="prezzo">18</span></div><p class="desc">Con polenta</p></div>
+</div>
+<div class="menu-cat"><h3>Dal forno a legna</h3>
+<div class="voce"><div class="riga"><span class="nome">Arrosto di maiale</span><span class="punti"></span><span class="prezzo">17</span></div><p class="desc">Con patate</p></div>
+<div class="voce"><div class="riga"><span class="nome">Cosciotto d'agnello</span><span class="punti"></span><span class="prezzo">21</span></div><p class="desc">Con patate e rosmarino</p></div>
+<div class="voce"><div class="riga"><span class="nome">Patate al forno</span><span class="punti"></span><span class="prezzo">5</span></div></div>
+</div>
+    </div>
+    <div class="menu-cols solo">
+<div class="menu-cat"><h3>Dolci</h3>
+<div class="voce"><div class="riga"><span class="nome">Tiramisù</span><span class="punti"></span><span class="prezzo">6</span></div></div>
+<div class="voce"><div class="riga"><span class="nome">Torta della casa</span><span class="punti"></span><span class="prezzo">6</span></div><p class="desc">Cambia con la stagione</p></div>
+<div class="voce"><div class="riga"><span class="nome">Panna cotta</span><span class="punti"></span><span class="prezzo">6</span></div><p class="desc">Con frutti di bosco</p></div>
+</div>
+    </div>
+    <p class="nota">Pane e grissini della casa. Per allergie e intolleranze chiedete al personale.</p>
+  </div>
+</section>
+
+<section class="tab-panel block" id="vini">
+  <div class="container">
+    <div style="text-align: center;">
+      <div class="eyelet">Cantina</div>
+      <h2 class="titolone">Pochi vini, scelti per la cucina</h2>
+    </div>
+    <div class="menu-cols">
+<div class="menu-cat"><h3>Bollicine</h3>
+<div class="voce"><div class="riga"><span class="nome">Franciacorta Brut</span><span class="punti"></span><span class="calice">calice 7</span><span class="prezzo">38</span></div><p class="desc">Lombardia</p></div>
+<div class="voce"><div class="riga"><span class="nome">Oltrepò Pavese Metodo Classico</span><span class="punti"></span><span class="calice">calice 6</span><span class="prezzo">30</span></div><p class="desc">Lombardia · Pinot Nero</p></div>
+</div>
+<div class="menu-cat"><h3>Bianchi</h3>
+<div class="voce"><div class="riga"><span class="nome">Lugana</span><span class="punti"></span><span class="calice">calice 5</span><span class="prezzo">22</span></div><p class="desc">Lombardia · Lago di Garda</p></div>
+<div class="voce"><div class="riga"><span class="nome">Gavi</span><span class="punti"></span><span class="calice">calice 5</span><span class="prezzo">24</span></div><p class="desc">Piemonte</p></div>
+</div>
+<div class="menu-cat"><h3>Rossi</h3>
+<div class="voce"><div class="riga"><span class="nome">Bonarda dell'Oltrepò Pavese</span><span class="punti"></span><span class="calice">calice 5</span><span class="prezzo">20</span></div><p class="desc">Lombardia · frizzante</p></div>
+<div class="voce"><div class="riga"><span class="nome">Valtellina Superiore</span><span class="punti"></span><span class="calice">calice 7</span><span class="prezzo">32</span></div><p class="desc">Lombardia · Nebbiolo</p></div>
+<div class="voce"><div class="riga"><span class="nome">Sforzato di Valtellina</span><span class="punti"></span><span class="prezzo">55</span></div><p class="desc">Nebbiolo da uve appassite</p></div>
+</div>
+<div class="menu-cat"><h3>Della casa</h3>
+<div class="voce"><div class="riga"><span class="nome">Rosso e bianco</span></div><p class="desc">Quarto di litro 4 · mezzo litro 7 · litro 13</p></div>
+</div>
+    </div>
+    <p class="nota">Prezzi in bottiglia, calice dove indicato. La carta completa è in sala.</p>
+  </div>
+</section>
+
+<section class="tab-panel block" id="settimane">
+  <div class="container-narrow" style="text-align: center;">
+    <div class="eyelet">Da giovedì a sabato</div>
+    <h2 class="titolone">Un piatto, una settimana</h2>
+    <div class="hrline center"></div>
+    <p class="lead">Ogni settimana un piatto della tradizione diventa il protagonista del menù, a pranzo e a cena.</p>
+  </div>
+  <div class="container">
+    <div class="serate-grid due">
+      <div class="serata-card settimana-card"><div>
+        <div class="periodo">29 – 31 ottobre</div><h3>La cassoeula</h3>
+        <p>Verze, costine, salamini e piedini, cotti a lungo come vuole la ricetta. Con la polenta.</p></div></div>
+      <div class="serata-card settimana-card"><div>
+        <div class="periodo">5 – 7 novembre</div><h3>Lo stracotto d'asino</h3>
+        <p>Carne cotta lentamente con cipolle e vino rosso. Con la polenta.</p></div></div>
+    </div>
+    <p class="nota" style="text-align:center;">A seguire altri piatti della tradizione. Il programma aggiornato è su Instagram, o scriveteci su WhatsApp.</p>
+    <p style="text-align:center; margin-top: 24px;">
+      <a href="https://wa.me/393758791522?text=Vorrei%20ricevere%20il%20programma%20delle%20settimane%20a%20tema" target="_blank" rel="noopener" class="cta secondary">WhatsApp</a>
+      <a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener" class="cta secondary">Instagram</a>
+    </p>
+  </div>
+</section>
+
+<section class="cta-block">
+  <h2>Prenotazioni</h2>
+  <p>Per la sera e per le settimane a tema consigliamo di prenotare. The Fork, telefono o WhatsApp.</p>
+  <div class="cta-row">
+    <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta primary">Prenota su The Fork</a>
+    <a href="tel:+393758791522" class="cta secondary">375 879 1522</a>
+    <a href="https://wa.me/393758791522" target="_blank" rel="noopener" class="cta secondary">WhatsApp</a>
+  </div>
+</section>
+<script>
+(function(){
+  var d=document, p=[].slice.call(d.querySelectorAll('.tab-panel')), t=[].slice.call(d.querySelectorAll('.tabs a'));
+  function id(){var h=(location.hash||'#pranzo').slice(1);var e=d.getElementById(h);return e&&e.classList.contains('tab-panel')?h:'pranzo';}
+  function show(){var x=id();p.forEach(function(e){e.classList.toggle('attiva',e.id===x)});t.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+x)});}
+  t.forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();history.replaceState(null,'',a.getAttribute('href'));show();});});
+  window.addEventListener('hashchange',show);
+  show();
+  if(location.hash&&d.querySelector('.tabs')){setTimeout(function(){d.querySelector('.tabs').scrollIntoView({block:'start'});},50);}
+})();
+</script>
+<footer class="sitofoot">
+  <div class="foot-nav">
+    <a href="trattoria.html">La trattoria</a><a href="menu.html">Menù</a><a href="eventi.html">Eventi privati</a><a href="contatti.html">Dove siamo</a>
+  </div>
+  La Corte dei Sabiìti <span class="trattino"></span> Via Marconi 5 · 22078 Turate (CO) <span class="trattino"></span>
+  <a href="tel:+393758791522">375 879 1522</a> <span class="trattino"></span>
+  <a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener">Instagram</a> <span class="trattino"></span>
+  <a href="https://www.facebook.com/profile.php?id=61594325304777" target="_blank" rel="noopener">Facebook</a>
+</footer>
+</body>
+</html>

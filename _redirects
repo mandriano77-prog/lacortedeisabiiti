@@ -1,0 +1,10 @@
+# Pagine accorpate nella versione snella
+/carta.html      /menu.html#sera         301
+/vini.html       /menu.html#vini         301
+/settimane.html  /menu.html#settimane    301
+/squadra.html    /trattoria.html#squadra 301
+
+# Link corti (302: modificabili in futuro senza ristampare nulla)
+/ig  https://www.instagram.com/lacortedeisabiiti/                 302
+/fb  https://www.facebook.com/profile.php?id=61594325304777       302
+/wa  https://wa.me/393758791522                                   302

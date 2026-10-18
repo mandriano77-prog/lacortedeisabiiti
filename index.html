@@ -32,32 +32,36 @@
   main {
     position:relative; z-index:2; min-height:100vh; min-height:100dvh;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
-    padding:48px 24px 40px; text-align:center;
+    padding:36px 24px 32px; text-align:center;
   }
-  .logo { height:min(54vh,500px); width:auto; max-width:78vw; object-fit:contain; }
-  .linea { width:56px; height:1px; background:var(--avorio); opacity:.7; margin:34px auto 22px; }
+  .logo { height:min(36vh,360px); width:auto; max-width:78vw; object-fit:contain; }
+  .linea { width:56px; height:1px; background:var(--avorio); opacity:.7; margin:26px auto 16px; }
   .stato { font-size:12px; letter-spacing:4px; text-transform:uppercase; font-weight:400; opacity:.9; }
-  .contatti { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:28px; }
-  .contatti a {
-    display:inline-flex; flex-direction:column; align-items:center; gap:2px;
-    min-width:150px; padding:13px 22px; text-decoration:none; color:var(--avorio);
+  .info { margin-top:22px; display:flex; flex-direction:column; gap:14px; }
+  .info p { font-size:15px; letter-spacing:.3px; line-height:1.5; }
+  .info small { display:block; font-size:10px; letter-spacing:3px; text-transform:uppercase; opacity:.9; margin-bottom:2px; }
+  .info a { color:var(--avorio); text-decoration:none; border-bottom:1px solid rgba(237,226,202,.5); padding-bottom:1px; transition:border-color .2s, color .2s; }
+  .info a:hover, .info a:focus-visible { border-color:var(--avorio); outline:none; }
+  .info .tel { font-size:19px; letter-spacing:1.5px; }
+  .social { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:24px; }
+  .social a {
+    min-width:128px; padding:11px 22px; text-decoration:none; color:var(--avorio);
+    font-size:11px; letter-spacing:3px; text-transform:uppercase;
     border:1px solid rgba(237,226,202,.55); background:rgba(110,50,25,.38);
     backdrop-filter:blur(4px); transition:background .2s, border-color .2s;
   }
-  .contatti a:hover, .contatti a:focus-visible { background:var(--petrolio); border-color:var(--petrolio); outline:none; }
-  .contatti small { font-size:10px; letter-spacing:3px; text-transform:uppercase; opacity:.9; }
-  .contatti span { font-size:15px; font-weight:400; letter-spacing:.3px; }
-  .indirizzo { margin-top:30px; font-size:12px; letter-spacing:2.5px; text-transform:uppercase; opacity:.9; line-height:1.9; }
-  .indirizzo a { color:inherit; text-decoration:none; border-bottom:1px solid rgba(237,226,202,.35); }
+  .social a:hover, .social a:focus-visible { background:var(--petrolio); border-color:var(--petrolio); outline:none; }
+  .indirizzo { margin-top:24px; font-size:11px; letter-spacing:2.5px; text-transform:uppercase; opacity:.9; line-height:1.9; }
   @media (max-width:560px) {
-    .logo { height:min(44vh,380px); }
-    .contatti { flex-direction:column; align-items:stretch; width:100%; max-width:320px; }
-    .contatti a { min-width:0; }
+    .logo { height:min(34vh,300px); }
+    .social { gap:8px; }
+    .social a { min-width:0; padding:10px 12px; font-size:10px; letter-spacing:1.5px; }
+    .info p { font-size:14px; word-break:break-word; }
   }
   @media (prefers-reduced-motion:no-preference) {
     main > * { animation:entra .9s ease both; }
     main > *:nth-child(2) { animation-delay:.12s; } main > *:nth-child(3) { animation-delay:.2s; }
-    main > *:nth-child(4) { animation-delay:.3s; } main > *:nth-child(5) { animation-delay:.4s; }
+    main > *:nth-child(4) { animation-delay:.3s; } main > *:nth-child(5) { animation-delay:.4s; } main > *:nth-child(6) { animation-delay:.5s; }
     @keyframes entra { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
   }
 </style>
@@ -69,13 +73,17 @@
   <img class="logo" src="logo_avorio.png" alt="La Corte dei Sabiìti — Cucina tradizionale">
   <div class="linea"></div>
   <p class="stato">Il nuovo sito sta arrivando</p>
-  <div class="contatti">
-    <a href="tel:+393758791522"><small>Telefono</small><span>375 879 1522</span></a>
-    <a href="https://wa.me/393758791522" target="_blank" rel="noopener"><small>WhatsApp</small><span>375 879 1522</span></a>
-    <a href="mailto:info@lacortedeisabiiti.com"><small>Info</small><span>info@lacortedeisabiiti.com</span></a>
-    <a href="mailto:prenotazioni@lacortedeisabiiti.com"><small>Prenotazioni</small><span>prenotazioni@lacortedeisabiiti.com</span></a>
+  <div class="info">
+    <p><small>Per informazioni scrivete a</small><a href="mailto:info@lacortedeisabiiti.com">info@lacortedeisabiiti.com</a></p>
+    <p><small>Per prenotazioni scrivete a</small><a href="mailto:prenotazioni@lacortedeisabiiti.com">prenotazioni@lacortedeisabiiti.com</a></p>
+    <p><small>Telefono</small><a class="tel" href="tel:+393758791522">375 879 1522</a></p>
   </div>
-  <p class="indirizzo">Via Marconi 5 · 22078 Turate (CO)<br><a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/profile.php?id=61595126012676" target="_blank" rel="noopener">Facebook</a></p>
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=61595126012676" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/393758791522" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="indirizzo">Via Marconi 5 · 22078 Turate (CO)</p>
 </main>
 </body>
 </html>

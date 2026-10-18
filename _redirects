@@ -1,8 +1,17 @@
-# Pagine accorpate nella versione snella
-/carta.html      /menu.html#sera         301
-/vini.html       /menu.html#vini         301
-/settimane.html  /menu.html#settimane    301
-/squadra.html    /trattoria.html#squadra 301
+# Pagina di cortesia attiva: il sito completo e' sul branch "sito-completo".
+# Tutte le pagine della bozza rimandano alla home finche' non e' pronto.
+/menu            /  302
+/menu.html       /  302
+/trattoria       /  302
+/trattoria.html  /  302
+/eventi          /  302
+/eventi.html     /  302
+/contatti        /  302
+/contatti.html   /  302
+/carta.html      /  302
+/vini.html       /  302
+/settimane.html  /  302
+/squadra.html    /  302
 
 # Link corti (302: modificabili in futuro senza ristampare nulla)
 /ig  https://www.instagram.com/lacortedeisabiiti/                 302

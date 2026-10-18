@@ -3,104 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trattoria a Turate, cotture a legna — La Corte dei Sabiìti</title>
-<meta name="description" content="La Corte dei Sabiìti, trattoria a Turate (Via Marconi 5). Pranzo di lavoro a 15 euro, cucina tradizionale lombarda la sera, ogni settimana un piatto a tema, cotture a legna per pane, arrosti e patate.">
+<title>La Corte dei Sabiìti — Turate | Il nuovo sito sta arrivando</title>
+<meta name="description" content="La Corte dei Sabiìti, cucina tradizionale a Turate (Via Marconi 5). Il nuovo sito è in arrivo: per prenotare chiamaci o scrivici su WhatsApp.">
+<meta name="theme-color" content="#204858">
 <link rel="icon" type="image/png" href="logo_corten.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=65">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --corten:#A0502D; --petrolio:#204858; --avorio:#EDE2CA; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { height:100%; }
+  body {
+    font-family:'Inter',sans-serif; font-weight:400; color:var(--avorio);
+    background:var(--petrolio); -webkit-font-smoothing:antialiased;
+    min-height:100vh; min-height:100dvh; position:relative; overflow-x:hidden;
+  }
+  .bg {
+    position:fixed; inset:-40px; z-index:0;
+    background:url('img/via_marconi_epoca.jpg') center/cover no-repeat;
+    filter:blur(6px) sepia(.2);
+  }
+  .velo {
+    position:fixed; inset:0; z-index:1;
+    background:
+      radial-gradient(ellipse at center, rgba(32,72,88,.50) 0%, rgba(32,72,88,.80) 85%);
+  }
+  main {
+    position:relative; z-index:2; min-height:100vh; min-height:100dvh;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:48px 24px 40px; text-align:center;
+  }
+  .logo { height:min(54vh,500px); width:auto; max-width:78vw; object-fit:contain; }
+  .linea { width:56px; height:1px; background:var(--corten); margin:34px auto 22px; }
+  .stato { font-size:12px; letter-spacing:4px; text-transform:uppercase; font-weight:400; opacity:.9; }
+  .contatti { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:28px; }
+  .contatti a {
+    display:inline-flex; flex-direction:column; align-items:center; gap:2px;
+    min-width:150px; padding:13px 22px; text-decoration:none; color:var(--avorio);
+    border:1px solid rgba(237,226,202,.45); background:rgba(32,72,88,.35);
+    backdrop-filter:blur(4px); transition:background .2s, border-color .2s;
+  }
+  .contatti a:hover, .contatti a:focus-visible { background:var(--corten); border-color:var(--corten); outline:none; }
+  .contatti small { font-size:10px; letter-spacing:3px; text-transform:uppercase; opacity:.75; }
+  .contatti span { font-size:15px; font-weight:400; letter-spacing:.3px; }
+  .indirizzo { margin-top:30px; font-size:12px; letter-spacing:2.5px; text-transform:uppercase; opacity:.75; line-height:1.9; }
+  .indirizzo a { color:inherit; text-decoration:none; border-bottom:1px solid rgba(237,226,202,.35); }
+  @media (max-width:560px) {
+    .logo { height:min(44vh,380px); }
+    .contatti { flex-direction:column; align-items:stretch; width:100%; max-width:320px; }
+    .contatti a { min-width:0; }
+  }
+  @media (prefers-reduced-motion:no-preference) {
+    main > * { animation:entra .9s ease both; }
+    main > *:nth-child(2) { animation-delay:.12s; } main > *:nth-child(3) { animation-delay:.2s; }
+    main > *:nth-child(4) { animation-delay:.3s; } main > *:nth-child(5) { animation-delay:.4s; }
+    @keyframes entra { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  }
+</style>
 </head>
 <body>
-<nav class="topbar" id="topbar">
-  <a href="index.html" class="brand"><span class="corte">La Corte dei </span><strong>Sabiìti</strong></a>
-  <button class="burger" aria-label="Apri il menu" aria-expanded="false" onclick="var n=document.getElementById('topbar');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><span></span></button>
-  <div class="menu">
-    <a href="trattoria.html">La trattoria</a>
-    <a href="menu.html">Menù</a>
-    <a href="eventi.html">Eventi privati</a>
-    <a href="contatti.html">Dove siamo</a>
-    <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta-nav">Prenota</a>
+<div class="bg" aria-hidden="true"></div>
+<div class="velo" aria-hidden="true"></div>
+<main>
+  <img class="logo" src="logo_avorio.png" alt="La Corte dei Sabiìti — Cucina tradizionale">
+  <div class="linea"></div>
+  <p class="stato">Il nuovo sito sta arrivando</p>
+  <div class="contatti">
+    <a href="tel:+393758791522"><small>Telefono</small><span>375 879 1522</span></a>
+    <a href="https://wa.me/393758791522" target="_blank" rel="noopener"><small>WhatsApp</small><span>375 879 1522</span></a>
+    <a href="mailto:info@lacortedeisabiiti.com"><small>Info</small><span>info@lacortedeisabiiti.com</span></a>
+    <a href="mailto:prenotazioni@lacortedeisabiiti.com"><small>Prenotazioni</small><span>prenotazioni@lacortedeisabiiti.com</span></a>
   </div>
-</nav>
-<header class="home-hero" style="--bg-img: url('img/hero-home-2.jpg')">
-  <div class="wrap">
-    <img src="logo_avorio.png" alt="La Corte dei Sabiìti" class="logo">
-    <div class="claim">La cucina di</div>
-    <h1>TURATE</h1>
-    <div class="divider"></div>
-    <div class="sotto">cotture a legna</div>
-    <div class="cta-row">
-      <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta primary">Prenota un tavolo</a>
-      <a href="menu.html" class="cta secondary" style="color: var(--panna); border-color: var(--panna);">Il menù</a>
-    </div>
-  </div>
-</header>
-
-<div class="orari-strip">
-  <div><div class="k">Pranzo</div><div class="v">Lunedì – Sabato<br>12.00 – 14.30</div></div>
-  <div><div class="k">Cena</div><div class="v">Giovedì – Sabato<br>19.00 – 24.00</div></div>
-  <div><div class="k">Domenica</div><div class="v">Chiuso<span>disponibile per eventi privati</span></div></div>
-</div>
-
-<section class="block">
-  <div class="container-narrow" style="text-align: center;">
-    <div class="eyelet">La trattoria</div>
-    <h2 class="titolone">Una trattoria nel centro di Turate</h2>
-    <div class="hrline center"></div>
-    <p class="lead">Nel locale del Sabiìti, in Via Marconi 5, riparte una trattoria con una squadra tutta rinnovata.</p>
-    <p class="lead">Cucina della tradizione lombarda, con pane, arrosti e patate cotti a legna.</p>
-    <p style="margin-top: 36px;"><a href="trattoria.html" class="cta secondary">La nostra storia</a></p>
-  </div>
-</section>
-
-<section class="feature">
-  <div class="img" style="--bg-img: url('img/cassoeula.jpg')"></div>
-  <div class="txt">
-    <div class="eyelet">Settimane a tema</div>
-    <h3>Dal 29 ottobre, la cassoeula</h3>
-    <div class="quando">Poi dal 5 novembre lo stracotto d'asino</div>
-    <p>Ogni settimana, da giovedì a sabato, un piatto della tradizione al centro del menù.</p>
-    <a href="menu.html#settimane" class="cta primary">Le settimane a tema</a>
-  </div>
-</section>
-
-<section class="block recensioni" id="recensioni">
-  <div class="container" style="text-align: center;">
-    <div class="eyelet">Recensioni</div>
-    <h2 class="titolone">Dicono di noi</h2>
-    <div class="hrline center"></div>
-    <div class="rec-grid">
-      <!-- Per inserire una recensione vera, sostituire un riquadro .rec-slot con:
-      <figure class="rec-card"><blockquote>Testo della recensione.</blockquote><figcaption>Nome · Google · mese anno</figcaption></figure> -->
-      <div class="rec-slot"><span>Prima recensione</span><small>in arrivo</small></div>
-      <div class="rec-slot"><span>Seconda recensione</span><small>in arrivo</small></div>
-      <div class="rec-slot"><span>Terza recensione</span><small>in arrivo</small></div>
-    </div>
-    <div class="cta-row" style="margin-top: 32px;">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=La+Corte+dei+Sabiiti+Turate" class="cta scuro" target="_blank" rel="noopener">Recensisci su Google</a>
-      <a href="https://www.tripadvisor.it" class="cta secondary" target="_blank" rel="noopener">Recensisci su TripAdvisor</a>
-    </div>
-  </div>
-</section>
-
-<section class="cta-block">
-  <h2>Prenotazioni</h2>
-  <p>Per la sera e per le settimane a tema consigliamo di prenotare. The Fork, telefono o WhatsApp.</p>
-  <div class="cta-row">
-    <a href="https://www.thefork.it" target="_blank" rel="noopener" class="cta primary">Prenota su The Fork</a>
-    <a href="tel:+393758791522" class="cta secondary">375 879 1522</a>
-    <a href="https://wa.me/393758791522" target="_blank" rel="noopener" class="cta secondary">WhatsApp</a>
-  </div>
-</section>
-<footer class="sitofoot">
-  <div class="foot-nav">
-    <a href="trattoria.html">La trattoria</a><a href="menu.html">Menù</a><a href="eventi.html">Eventi privati</a><a href="contatti.html">Dove siamo</a>
-  </div>
-  La Corte dei Sabiìti <span class="trattino"></span> Via Marconi 5 · 22078 Turate (CO) <span class="trattino"></span>
-  <a href="tel:+393758791522">375 879 1522</a> <span class="trattino"></span>
-  <a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener">Instagram</a> <span class="trattino"></span>
-  <a href="https://www.facebook.com/profile.php?id=61594325304777" target="_blank" rel="noopener">Facebook</a>
-</footer>
+  <p class="indirizzo">Via Marconi 5 · 22078 Turate (CO)<br><a href="https://www.instagram.com/lacortedeisabiiti/" target="_blank" rel="noopener">Instagram</a></p>
+</main>
 </body>
 </html>
